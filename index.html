@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J0nas.dev</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <script defer src="/src/main.js"></script>
+  </head>
+  <body class="bg-neutral-900">
+
+
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-neutral-800/70 flex flex-col md:flex-row items-center md:justify-around gap-4 py-2">
+      <span class="text-base font-mono text-gray-400 font-bold md:font-bold md:text-2xl  2xl:text-3xl">J0nas.<span class="text-sm font-bold md:text-lg md:font-bold xl:text-lg">dev</span></span>
+      <nav class="xl:w-3xl">
+        <ul class="flex xl:justify-around gap-8 text-base font-semibold uppercase text-teal-50 hover:scale-105 transition-transform " id="nav-desktop-items"></ul>
+      </nav>
+      <a href="#sobre-mi" class="block group px-4 py-3 bg-gradient-to-br dark:from-indigo-500 dark:via-indigo-700 dark:to-indigo-500 from-indigo-400 via-indigo-600 to-indigo-400 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+        <div class="absolute -rotate-45 blur-sm inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+        <div class="flex items-center justify-center gap-2 relative z-10 "><span>Hablemos</span></div>
+      </a>
+    </header>
+
+
+
+    <section class=" bg-neutral-800/70 md:w-[79%] md:mx-auto pt-42 md:pt-17" id="inicio">
+      <div class="flex flex-col md:flex-row justify-center  items-center md:items-center gap-10 m-4 font-mono" id="photo-links">
+        <div class="flex flex-col items-center mt-4">
+          <img class="min-w-[14rem] md:mt-10 w-40 md:w-64 p-6 border-2 border-y-gray-900 object-contain" src="./src/assets/img/jq1.png" alt="joq-foto">
+          <ul class="flex gap-6 text-teal-50 mt-4 md:mb-10" id="mis-redes"></ul>
+        </div>
+        <div class="flex flex-col justify-center border-2 border-y-gray-900 p-6 text-balance mb-4">
+          <h1 class="text-teal-50 font-extrabold text-2xl md:text-4xl mb-4">Hola, soy Jonatan Quiroga</h1>
+          <h2 class="text-teal-50 font-extrabold text-2xl md:text-4xl">Y soy <span class="text-[#5146eb]">Full Stack Developer</span></h2>
+          <p class="text-teal-50 md:text-2xl mt-10 mb-10">Programador y entusiasta del hardware.</p>
+          <p class="text-teal-50 md:text-2xl"><span class="text-3xl">+1</span> Años desarrollando UI/UX</p>
+          <p class="text-teal-50 md:text-2xl"><span class="text-3xl">+3</span> Proyectos funcionales</p>
+        </div>
+      </div>
+    </section >
+
+
+
+    <section class=" bg-neutral-800/70 md:w-[79%] md:mx-auto" id="formacion">
+      <h2 class="text-teal-50 text-2xl md:text-5xl p-6 text-center font-mono"> Formación Académica</h2>
+      <div class="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-10 mb-4 pb-6 font-mono" id="academic-cards" ></div>
+    </section>
+
+
+
+    <section class=" bg-neutral-800/70 md:w-[79%] md:mx-auto" id="experiencia">
+      <h2 class="text-teal-50 text-2xl md:text-5xl p-6 text-center font-mono"> Experiencia Profesional</h2>
+      <div class="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-10 mb-4 pb-6 font-mono" id="professional-cards" ></div>
+    </section>
+    
+
+
+
+    <section class=" bg-neutral-800/70 md:w-[79%] md:mx-auto" id="sobre-mi">
+      <h2 class="text-teal-50 text-2xl md:text-5xl p-6 text-center font-mono"> Sobre mí</h2>
+      <div class="flex justify-center mb-4 px-6">
+        <div class="flex flex-col items-center max-w-3xl md:items-stretch gap-10 mb-6 p-6 font-mono border-2 border-black border-y-gray-900 text-teal-50">
+          <p>Desarrollador en formación con foco en desarrollo web y bases sólidas en programación.</p>
+          <p>Background en soporte técnico y QA, con experiencia en diagnóstico, procesos y trabajo en equipos internacionales.</p>
+          <p>Me interesa construir aplicaciones funcionales y bien estructuradas, cuidando tanto la experiencia del usuario como la lógica del sistema.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="bg-neutral-800/70 md:w-[79%] md:mx-auto" id="footer">
+      <h2 class="text-teal-50 text-sm md:text-xl p-6 text-center font-mono">¿En qué te puedo ayudar?</h2>
+      <div class="flex justify-center pb-10 p-6 mb-4">
+        <div class="flex items-center gap-4 border-2 border-y-gray-900 p-6 max-w-3xl w-full">
+          <textarea class="flex-1 bg-transparent resize-none outline-none text-gray-300 placeholder-gray-500 font-mono" 
+          id="message" 
+          placeholder="Escribí tu mensaje acá..." 
+          rows="3">
+          </textarea>
+
+          <button class="text-[#5146eb] text-3xl hover:scale-140 transition-transform" 
+          id="sendMessage"
+          title="Enviar mensaje">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-telegram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" /></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- <section class="  md:w-[79%] md:mx-auto" id="experiencia">
+      <h2 class="text-teal-50 text-2xl md:text-5xl p-2 text-center font-mono"></h2>
+    </section> -->
+
+
+
+  </body>
+</html>
