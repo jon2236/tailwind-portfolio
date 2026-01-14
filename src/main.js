@@ -91,7 +91,7 @@ const iconCalendar = `
 
 function ExperienceCard(exp) {
     return `
-        <div class="border-2 border-y-gray-900 max-w-md w-full p-4">
+        <div class="border-2 border-y-gray-900 max-w-md w-full p-4 px-5 sm:px-0">
 
             <h1 class="text-teal-50 font-bold text-xl mb-2">
                 ${exp.title}
