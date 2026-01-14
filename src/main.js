@@ -91,36 +91,38 @@ const iconCalendar = `
 
 function ExperienceCard(exp) {
     return `
-        <div class="border-2 border-y-gray-900 max-w-md w-full p-4 px-5 sm:px-0">
+        <div class="w-full px-4 sm:px-6 flex justify-center max-w-md">
 
-            <h1 class="text-teal-50 font-bold text-xl mb-2">
-                ${exp.title}
-            </h1>
+            <div class="border-2 border-y-gray-900 p-4">
+                <h1 class="text-teal-50 font-bold text-xl mb-2">
+                    ${exp.title}
+                </h1>
 
-            <p class="text-gray-500 text-lg mb-2">
-                ${exp.institution}
-            </p>
-
-            <div class="flex flex-wrap gap-6 mt-6">
-                <p class="flex items-center gap-2 text-gray-500">
-                    ${iconLocation}
-                    <span>${exp.location}</span>
+                <p class="text-gray-500 text-lg mb-2">
+                    ${exp.institution}
                 </p>
 
-                <p class="flex items-center gap-2 text-gray-500">
-                    ${iconCalendar}
-                    <span>${exp.date}</span>
+                <div class="flex flex-wrap gap-6 mt-6">
+                    <p class="flex items-center gap-2 text-gray-500">
+                        ${iconLocation}
+                        <span>${exp.location}</span>
+                    </p>
+
+                    <p class="flex items-center gap-2 text-gray-500">
+                        ${iconCalendar}
+                        <span>${exp.date}</span>
+                    </p>
+                </div>
+
+                <p class="text-teal-50 mt-4 max-w-prose">
+                    ${exp.description}
                 </p>
-            </div>
 
-            <p class="text-teal-50 mt-4 max-w-prose">
-                ${exp.description}
-            </p>
-
-            <div class="flex flex-wrap gap-4 mt-4">
-                ${exp.technologies.map(
-                    tech => `<span class="text-[#5146eb] text-lg">${tech}</span>`
-                ).join("")}
+                <div class="flex flex-wrap gap-4 mt-4">
+                    ${exp.technologies.map(
+                        tech => `<span class="text-[#5146eb] text-lg">${tech}</span>`
+                    ).join("")}
+                </div>
             </div>
 
         </div>
